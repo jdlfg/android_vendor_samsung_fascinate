@@ -1,3 +1,3 @@
 PRODUCT_MAKEFILES := \
-       $(LOCAL_DIR)/device_fascinate.mk
+       $(LOCAL_DIR)/device.mk
 
