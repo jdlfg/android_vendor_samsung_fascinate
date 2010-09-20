@@ -77,7 +77,7 @@ $(LOCAL_PATH)/proprietary/android.hardware.telephony.cdma.xml:system/etc/permiss
 $(LOCAL_PATH)/proprietary/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
 $(LOCAL_PATH)/proprietary/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
 $(LOCAL_PATH)/proprietary/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
-$(LOCAL_PATH)/proprietary/options:system/etc/ppp/peers/options \
+$(LOCAL_PATH)/proprietary/options:system/etc/ppp/options \
 $(LOCAL_PATH)/proprietary/vold.conf:system/etc/vold.conf \
 $(LOCAL_PATH)/proprietary/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
 $(LOCAL_PATH)/proprietary/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \

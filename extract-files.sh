@@ -1,5 +1,6 @@
 #!/bin/sh
 
+rm -rf proprietary
 mkdir -p proprietary
 
 adb pull /system/lib/libgps.so proprietary
@@ -18,7 +19,7 @@ adb pull /system/etc/permissions/android.hardware.telephony.cdma.xml proprietary
 adb pull /system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml proprietary
 adb pull /system/etc/permissions/android.hardware.touchscreen.multitouch.xml proprietary
 adb pull /system/etc/permissions/android.software.live_wallpaper.xml proprietary
-adb pull /system/etc/ppp/peers/options proprietary
+adb pull /system/etc/ppp/options proprietary
 adb pull /system/etc/vold.conf proprietary
 adb pull /system/etc/wifi/bcm4329_aps.bin proprietary
 adb pull /system/etc/wifi/bcm4329_mfg.bin proprietary
