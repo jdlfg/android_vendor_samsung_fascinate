@@ -20,7 +20,7 @@ PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := fascinate
 PRODUCT_MODEL := SCH-I500
 PRODUCT_MANUFACTURER := Samsung
-
+PRODUCT_POLICY := android.policy_phone
 PRODUCT_PROPERTY_OVERRIDES += \
 		ro.config.notification_sound=OnTheHunt.ogg \
 		ro.config.alarm_alert=Alarm_Classic.ogg \
@@ -41,6 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 		ro.cdma.otaspnumschema=SELC,1,80,99 \
 		ro.telephony.call_ring.multiple=false \
 		ro.telephony.call_ring.delay=3000 \
+		ro.url.safetylegal=http://www.motorola.com/staticfiles/Support/legal/?model=A855 \
 		ro.setupwizard.enable_bypass=1 \
 		dalvik.vm.dexopt-flags=m=y \
 		net.bt.name=Android \
