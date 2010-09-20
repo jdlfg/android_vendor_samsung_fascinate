@@ -17,10 +17,8 @@
 # To be included directly by a device_magic_*.mk makefile;
 # do not use inherit-product on this file.
 
-DEVICE_PACKAGE_OVERLAYS := vendor/htc/magic/overlay vendor/htc/common-open/overlay
-
 $(call inherit-product, build/target/product/generic.mk)
-$(call inherit-product, vendor/motorola/sholes/device_fascinate.mk)
+$(call inherit-product, vendor/samsung/fascinate/device_fascinate.mk)
 
 PRODUCT_PACKAGES += \
     DeskClock \
@@ -37,9 +35,9 @@ PRODUCT_PACKAGES += \
     libRS \
     librs_jni
 
-PRODUCT_NAME := fascinate
-PRODUCT_BRAND := samsung
-PRODUCT_DEVICE := fascinate
+PRODUCT_NAME := SCH-I500
+PRODUCT_BRAND := verizon
+PRODUCT_DEVICE := SCH-I500
 PRODUCT_MODEL := SCH-I500
 PRODUCT_MANUFACTURER := Samsung
 
@@ -47,7 +45,7 @@ PRODUCT_MANUFACTURER := Samsung
 include frameworks/base/data/sounds/AudioPackage4.mk
 
 # This is the list of locales included in AOSP builds
-PRODUCT_LOCALES := en_US en_GB fr_FR it_IT de_DE es_ES
+PRODUCT_LOCALES := en_US
 
 # This is a high DPI device, so add the hdpi pseudo-locale
 PRODUCT_LOCALES += hdpi
