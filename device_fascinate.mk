@@ -15,12 +15,6 @@
 #
 
 # This is the list of apps included in the generic AOSP build
-PRODUCT_NAME := fascinate
-PRODUCT_BRAND := verizon
-PRODUCT_DEVICE := fascinate
-PRODUCT_MODEL := SCH-I500
-PRODUCT_MANUFACTURER := Samsung
-PRODUCT_POLICY := android.policy_phone
 PRODUCT_PROPERTY_OVERRIDES += \
 		ro.config.notification_sound=OnTheHunt.ogg \
 		ro.config.alarm_alert=Alarm_Classic.ogg \

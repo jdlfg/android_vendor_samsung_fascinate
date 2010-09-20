@@ -43,3 +43,11 @@ PRODUCT_LOCALES := en_US
 
 # This is a high DPI device, so add the hdpi pseudo-locale
 PRODUCT_LOCALES += hdpi
+
+PRODUCT_NAME := fascinate
+PRODUCT_BRAND := verizon
+PRODUCT_DEVICE := fascinate
+PRODUCT_MODEL := SCH-I500
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_POLICY := android.policy_phone
+
