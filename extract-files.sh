@@ -10,6 +10,7 @@ adb pull /system/lib/libcamera.so proprietary
 adb pull /system/lib/libril.so proprietary
 
 adb pull /system/bin/pvrsrvinit proprietary
+
 adb pull /system/etc/gps.conf proprietary
 adb pull /system/etc/permissions/android.hardware.camera.autofocus.xml proprietary
 adb pull /system/etc/permissions/android.hardware.camera.flash-autofocus.xml proprietary
@@ -24,6 +25,12 @@ adb pull /system/etc/vold.conf proprietary
 adb pull /system/etc/wifi/bcm4329_aps.bin proprietary
 adb pull /system/etc/wifi/bcm4329_mfg.bin proprietary
 adb pull /system/etc/wifi/bcm4329_sta.bin proprietary
+
+adb pull /system/lib/libwm8994.so proprietary
+adb pull /system/lib/libsamsunglmeq.so proprietary
+adb pull /system/lib/liba2dp.so proprietary
+adb pull /system/lib/libsecril-client.so proprietary
+adb pull /system/lib/libs3cjpeg.so proprietary
 
 adb pull /system/tts/lang_pico/de-DE_gl0_sg.bin proprietary
 adb pull /system/tts/lang_pico/de-DE_ta.bin proprietary

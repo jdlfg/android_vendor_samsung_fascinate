@@ -82,6 +82,11 @@ $(LOCAL_PATH)/proprietary/vold.conf:system/etc/vold.conf \
 $(LOCAL_PATH)/proprietary/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
 $(LOCAL_PATH)/proprietary/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
 $(LOCAL_PATH)/proprietary/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
+$(LOCAL_PATH)/proprietary/libwm8994.so:system/lib/libwm8994.so \
+$(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
+$(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
+$(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
+$(LOCAL_PATH)/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
 $(LOCAL_PATH)/proprietary/de-DE_gl0_sg.bin:system/tts/lang_pico/de-DE_gl0_sg.bin \
 $(LOCAL_PATH)/proprietary/de-DE_ta.bin:system/tts/lang_pico/de-DE_ta.bin \
 $(LOCAL_PATH)/proprietary/en-GB_kh0_sg.bin:system/tts/lang_pico/en-GB_kh0_sg.bin \
