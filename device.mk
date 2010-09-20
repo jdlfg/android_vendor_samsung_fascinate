@@ -35,12 +35,6 @@ PRODUCT_PACKAGES += \
     libRS \
     librs_jni
 
-PRODUCT_NAME := SCH-I500
-PRODUCT_BRAND := verizon
-PRODUCT_DEVICE := SCH-I500
-PRODUCT_MODEL := SCH-I500
-PRODUCT_MANUFACTURER := Samsung
-
 # Pick up some sounds
 include frameworks/base/data/sounds/AudioPackage4.mk
 
