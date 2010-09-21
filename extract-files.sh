@@ -45,7 +45,7 @@ adb pull /system/bin/wpa_cli proprietary
 adb pull /system/bin/wpa_supplicant proprietary
 
 adb pull /system/cameradata/datapattern_420sp.yuv proprietary
-adb pull /system/cameradata/datapattern_from_420sp.yuv proprietary
+adb pull /system/cameradata/datapattern_front_420sp.yuv proprietary
 
 adb pull /system/etc/gps.conf proprietary
 adb pull /system/etc/permissions/android.hardware.camera.autofocus.xml proprietary

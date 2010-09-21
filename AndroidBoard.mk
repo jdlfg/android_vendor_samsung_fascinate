@@ -43,6 +43,46 @@ OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libwm8994.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libsamsunglmeq.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := liba2dp.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libsecril-client.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libs3cjpeg.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libaudiopolicy.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
@@ -51,7 +91,23 @@ OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libvolcustomjni.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libcamera.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libseccameraadaptor.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
@@ -183,16 +239,11 @@ $(LOCAL_PATH)/proprietary/nvram_net.txt:system/etc/wifi/nvram_net.txt \
 $(LOCAL_PATH)/proprietary/wifi.conf:system/etc/wifi/wifi.conf \
 $(LOCAL_PATH)/proprietary/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 $(LOCAL_PATH)/proprietary/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-$(LOCAL_PATH)/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+$(LOCAL_PATH)/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
 $(LOCAL_PATH)/proprietary/CE147F00.bin:system/firmware/CE147F00.bin \
 $(LOCAL_PATH)/proprietary/CE147F01.bin:system/firmware/CE147F01.bin \
 $(LOCAL_PATH)/proprietary/CE147F02.bin:system/firmware/CE147F02.bin \
-$(LOCAL_PATH)/proprietary/cE147F03.bin:system/firmware/CE147F03.bin \
-$(LOCAL_PATH)/proprietary/libwm8994.so:system/lib/libwm8994.so \
-$(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
-$(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
-$(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-$(LOCAL_PATH)/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+$(LOCAL_PATH)/proprietary/CE147F03.bin:system/firmware/CE147F03.bin \
 $(LOCAL_PATH)/proprietary/libActionShot.so:system/lib/libActionShot.so \
 $(LOCAL_PATH)/proprietary/libarccamera.so:system/lib/libarccamera.so \
 $(LOCAL_PATH)/proprietary/libbluedroid.so:system/lib/libbluedroid.so \
@@ -267,7 +318,6 @@ $(LOCAL_PATH)/proprietary/libsavsff.so:system/lib/libsavsff.so \
 $(LOCAL_PATH)/proprietary/libsavsvc.so:system/lib/libsavsvc.so \
 $(LOCAL_PATH)/proprietary/libscreencapture.so:system/lib/libscreencapture.so \
 $(LOCAL_PATH)/proprietary/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
-$(LOCAL_PATH)/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
 $(LOCAL_PATH)/proprietary/libseccamera.so:system/lib/libseccamera.so \
 $(LOCAL_PATH)/proprietary/libsecgps.so:system/lib/libsecgps.so \
 $(LOCAL_PATH)/proprietary/libSecOMXCore.so:system/lib/libSecOMXCore.so \
@@ -346,7 +396,6 @@ $(LOCAL_PATH)/proprietary/libusbmode_jni.so:system/lib/libusbmode_jni.so \
 $(LOCAL_PATH)/proprietary/libve_jni.so:system/lib/libve_jni.so \
 $(LOCAL_PATH)/proprietary/libvideieditor.so:system/lib/libvideieditor.so \
 $(LOCAL_PATH)/proprietary/lib_VoiceBooster_ARM_GA_Library.so:system/lib/lib_VoiceBooster_ARM_GA_Library.so \
-$(LOCAL_PATH)/proprietary/libvolcustomjni.so:system/lib/libvolcustomjni.so \
 $(LOCAL_PATH)/proprietary/libvsuite_sharedlib.so:system/lib/libvsuite_sharedlib.so \
 $(LOCAL_PATH)/proprietary/libvzw-loc-prov.so:system/lib/libvzw-loc-prov.so \
 $(LOCAL_PATH)/proprietary/libwifitest.so:system/lib/libwifitest.so \
