@@ -44,6 +44,9 @@ adb pull /system/bin/wm8994 proprietary
 adb pull /system/bin/wpa_cli proprietary
 adb pull /system/bin/wpa_supplicant proprietary
 
+adb pull /system/cameradata/datapattern_420sp.yuv proprietary
+adb pull /system/cameradata/datapattern_from_420sp.yuv proprietary
+
 adb pull /system/etc/gps.conf proprietary
 adb pull /system/etc/permissions/android.hardware.camera.autofocus.xml proprietary
 adb pull /system/etc/permissions/android.hardware.camera.flash-autofocus.xml proprietary
@@ -136,6 +139,11 @@ adb pull /system/etc/wifi/nvram_mfg.txt proprietary
 adb pull /system/etc/wifi/nvram_net.txt proprietary
 adb pull /system/etc/wifi/wifi.conf proprietary
 adb pull /system/etc/wifi/wpa_supplicant.conf proprietary
+
+adb pull /system/firmware/CE147F00.bin proprietary
+adb pull /system/firmware/CE147F01.bin proprietary
+adb pull /system/firmware/CE147F02.bin proprietary
+adb pull /system/firmware/CE147F03.bin proprietary
 
 adb pull /system/lib/libwm8994.so proprietary
 adb pull /system/lib/libsamsunglmeq.so proprietary

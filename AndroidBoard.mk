@@ -182,6 +182,12 @@ $(LOCAL_PATH)/proprietary/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
 $(LOCAL_PATH)/proprietary/nvram_net.txt:system/etc/wifi/nvram_net.txt \
 $(LOCAL_PATH)/proprietary/wifi.conf:system/etc/wifi/wifi.conf \
 $(LOCAL_PATH)/proprietary/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+$(LOCAL_PATH)/proprietary/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+$(LOCAL_PATH)/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+$(LOCAL_PATH)/proprietary/CE147F00.bin:system/firmware/CE147F00.bin \
+$(LOCAL_PATH)/proprietary/CE147F01.bin:system/firmware/CE147F01.bin \
+$(LOCAL_PATH)/proprietary/CE147F02.bin:system/firmware/CE147F02.bin \
+$(LOCAL_PATH)/proprietary/cE147F03.bin:system/firmware/CE147F03.bin \
 $(LOCAL_PATH)/proprietary/libwm8994.so:system/lib/libwm8994.so \
 $(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
 $(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
