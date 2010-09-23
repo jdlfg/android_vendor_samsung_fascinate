@@ -2,9 +2,13 @@
 # Product-specific compile-time definitions.
 #
 
+# ARMv7-A Cortex-A8 architecture
 TARGET_BOARD_PLATFORM := intrinsity
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+
+TARGET_BOARD_PLATFORM := s5pc110
+TARGET_BOARD_PLATFORM_GPU := POWERVR_SGX540_120
 
 TARGET_NO_BOOTLOADER := true
 
@@ -20,11 +24,28 @@ BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x04ac0000)
 # The size of a block that can be marked bad.
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Sound related defines
+BOARD_USES_ALSA_AUDIO := true
+BUILD_WITH_ALSA_UTILS := true
+
+# Bluetooth related defines
+BOARD_HAVE_BLUETOOTH := true
+BT_USE_BTL_IF := true
+BT_ALT_STACK := true
+BRCM_BTL_INCLUDE_A2DP := true
+BRCM_BT_USE_BTL_IF := true
+
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_USES_FFORMAT := true
 BOARD_RECOVERY_IGNORE_BOOTABLES := true
 
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_HAS_NO_MISC_PARTITION := true
+BOARD_USES_FFORMAT := true
+BOARD_RECOVERY_IGNORE_BOOTABLES := true
+
+BOARD_BOOT_DEVICE := /dev/block/bml7
 BOARD_DATA_DEVICE := /dev/block/mmcblk0p1
 BOARD_DATA_FILESYSTEM := auto
 BOARD_DATA_FILESYSTEM_OPTIONS := llw,check=no,nosuid,nodev
