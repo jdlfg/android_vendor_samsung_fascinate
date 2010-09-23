@@ -16,10 +16,6 @@
 
 # This is the list of apps included in the generic AOSP build
 PRODUCT_PROPERTY_OVERRIDES += \
-		rild.libpath=/system/lib/libsec-ril40.so
-		rild.libargs=-d /dev/ttyS0
-		ro.sf.lcd_density=240
-		ro.cdma.otaspnumschema=SELC,3,00,07,80,87,88,99
 		ro.media.enc.hprof.file.format=3gp
 		ro.media.enc.lprof.file.format=3gp
 		ro.media.enc.hprof.codec.vid=m4v
@@ -42,9 +38,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 		ro.media.enc.lprof.aud.hz=8000
 		ro.media.dec.video_sync_margins=-40,30
 		keyguard.no_require_sim=true
-		wifi.interface=eth0
-		dalvik.vm.startheapsize=8m
-		dalvik.vm.heapsize=48m
 		windowsmgr.max_events_per_sec=60
 		windowsmgr.support_rotation_270=true
 		ro.com.google.clientidbase=android-verizon
@@ -52,7 +45,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 		ro.com.google.clientidbase.am=android-verizon
 		ro.com.google.clientidbase.vs=android-verizon
 		ro.com.google.clientidbase.gmm=android-verizon
-		ro.opengles.version=131072
 		ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 		ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 		ro.com.google.locationfeatures=1
