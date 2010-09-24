@@ -210,7 +210,6 @@ $(LOCAL_PATH)/proprietary/prm_esmx.bin:system/etc/nuance/prm_esmx.bin \
 $(LOCAL_PATH)/proprietary/vst_config_vzw.bin:system/etc/nuance/vst_config_vzw.bin \
 $(LOCAL_PATH)/proprietary/str_esmx.bin:system/etc/nuance/str_esmx.bin \
 $(LOCAL_PATH)/proprietary/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-$(LOCAL_PATH)/proprietary/com.cequint.platform.xml:system/etc/permissions/com.cequint.platform/xml \
 $(LOCAL_PATH)/proprietary/com.google.android.datamessaging.xml:system/etc/permissions/com.google.android.datamessaging.xml \
 $(LOCAL_PATH)/proprietary/com.google.android.gtalkservice.xml:system/etc/permissions/com.google.android.gtalkservice.xml \
 $(LOCAL_PATH)/proprietary/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
@@ -218,7 +217,6 @@ $(LOCAL_PATH)/proprietary/com.pv.extensions.xml:system/etc/permissions/com.pv.ex
 $(LOCAL_PATH)/proprietary/com.pv.PVWmdrmClient.xml:system/etc/permissions/com.pv.PVWmdrmClient.xml \
 $(LOCAL_PATH)/proprietary/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
 $(LOCAL_PATH)/proprietary/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
-$(LOCAL_PATH)/proprietary/mobileap.xml:system/etc/permissions/mobileap.xml \
 $(LOCAL_PATH)/proprietary/samsung.feature.octa.xml:system/etc/permissions/samsung.feature.octa.xml \
 $(LOCAL_PATH)/proprietary/seccamera.xml:system/etc/permissions/seccamera.xml \
 $(LOCAL_PATH)/proprietary/sec_feature.xml:system/etc/permissions/sec_feature.xml \
