@@ -123,6 +123,9 @@ OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
 PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/proprietary/libRS.so:system/lib/libRS.so \
+$(LOCAL_PATH)/proprietary/librs_jni.so:system/lib/librs_jni.so \
+$(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
 $(LOCAL_PATH)/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
 $(LOCAL_PATH)/proprietary/BCM4329B1_002.002.023.0417.0464.hcd:system/bin/BCM4329B1_002.002.023.0417.0464.hcd \
 $(LOCAL_PATH)/proprietary/bluetoothd:system/bin/bluetoothd \

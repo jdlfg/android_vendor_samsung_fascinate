@@ -8,6 +8,9 @@ adb pull /system/lib/libaudio.so proprietary
 adb pull /system/lib/libaudiopolicy.so proprietary
 adb pull /system/lib/libcamera.so proprietary
 adb pull /system/lib/libril.so proprietary
+adb pull /system/lib/libRS.so proprietary
+adb pull /system/lib/librs_jni.so proprietary
+adb pull /system/lib/libpvrANDROID_WSEGL.so proprietary
 
 adb pull /system/bin/pvrsrvinit proprietary
 adb pull /system/bin/BCM4329B1_002.002.023.0417.0464.hcd proprietary
