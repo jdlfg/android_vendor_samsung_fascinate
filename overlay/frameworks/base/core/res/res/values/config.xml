@@ -78,7 +78,7 @@
     <!-- XXXXXX END OF RESOURCES USING WRONG NAMING CONVENTION -->
 
     <!-- The number of degrees to rotate the display when the keyboard is open. -->
-    <integer name="config_lidOpenRotation">90</integer>
+    <!-- <integer name="config_lidOpenRotation">90</integer> -->
 
     <!-- The number of degrees to rotate the display when the device is in a desk dock.
          A value of -1 means no change in orientation by default. -->
@@ -110,13 +110,13 @@
          the physical keyboard.  0 means it doesn't, 1 means it is accessible
          when the lid is open, 2 means it is accessible when the lid is
          closed.  The default is 1. -->
-    <integer name="config_lidKeyboardAccessibility">1</integer>
+    <!-- <integer name="config_lidKeyboardAccessibility">1</integer> -->
 
     <!-- Indicate whether the lid state impacts the accessibility of
          the physical keyboard.  0 means it doesn't, 1 means it is accessible
          when the lid is open, 2 means it is accessible when the lid is
          closed.  The default is 0. -->
-    <integer name="config_lidNavigationAccessibility">0</integer>
+    <!-- <integer name="config_lidNavigationAccessibility">0</integer> -->
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
@@ -211,13 +211,13 @@
          in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessKeyboardBacklightValues">
+    <!-- <integer-array name="config_autoBrightnessKeyboardBacklightValues">
         <item>100</item>
         <item>125</item>
         <item>170</item>
         <item>210</item>
         <item>255</item>
-    </integer-array>
+    </integer-array> -->
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
