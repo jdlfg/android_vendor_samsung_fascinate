@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS := vendor/samsung/galaxys/overlay
+DEVICE_PACKAGE_OVERLAYS := vendor/samsung/fascinate/overlay
 
 # This is the list of apps included in the generic AOSP build
 PRODUCT_PROPERTY_OVERRIDES += \
