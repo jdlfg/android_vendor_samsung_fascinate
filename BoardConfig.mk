@@ -26,6 +26,16 @@ BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x04ac0000)
 # The size of a block that can be marked bad.
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Wifi related defines
+WIFI_FIRMWARE_LOADER := "wlan_loader"
+WIFI_DRIVER_MODULE_PATH := "/lib/modules/dhd.ko"
+WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/wifi/bcm4329_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt dhd_watchdog_ms=10 dhd_poll=1"
+WIFI_MFGDRV_MODULE_ARG := "firmware_path=/system/etc/wifi/bcm4329_mfg.bin nvram_path=/system/etc/wifi/nvram_mfg.txt"
+WIFI_DRV_AP_MODULE_ARG := "firmware_path=/system/etc/wifi/bcm4329_aps.bin nvram_path=/system/etc/wifi/nvram_net.txt dhd_watchdog_ms=200 dhd_poll=1"
+WIFI_DRIVER_APS_FIRMWARE_NAME := "bcm4329_aps.bin"
+WIFI_DRIVER_STA_FIRMWARE_NAME := "bcm4329_sta.bin"
+WIFI_DRIVER_MODULE_NAME := "dhd"
+
 # Sound related defines
 BOARD_USES_ALSA_AUDIO := true
 BUILD_WITH_ALSA_UTILS := true
