@@ -51,6 +51,7 @@ adb pull /system/bin/sensorserver_yamaha proprietary
 adb pull /system/bin/sensorstatutil_yamaha proprietary
 adb pull /system/bin/si4709_test proprietary
 adb pull /system/bin/test_pvauthorengine proprietary
+adb pull /system/bin/vold proprietary
 adb pull /system/bin/wlp2pservice proprietary
 adb pull /system/bin/wlservice proprietary
 adb pull /system/bin/wm8994 proprietary

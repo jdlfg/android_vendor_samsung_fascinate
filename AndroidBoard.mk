@@ -128,10 +128,19 @@ $(LOCAL_PATH)/proprietary/seccamera.jar:system/framework/seccamera.jar \
 $(LOCAL_PATH)/proprietary/com.pv.extensions.jar:system/framework/com.pv.extensions.jar \
 $(LOCAL_PATH)/proprietary/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
 $(LOCAL_PATH)/proprietary/com.google.android.gtalkservice.jar:system/framework/com.google.android.gtalkservice.jar \
-$(LOCAL_PATH)/proprietary/com.google.android.datamessaging.jar:system/framework/com.google.android.datamessaging.jar \
 $(LOCAL_PATH)/proprietary/sec_feature.jar:system/framework/sec_feature.jar \
 $(LOCAL_PATH)/proprietary/com.samsung.device.jar:system/framework/com.samsung.device.jar \
 $(LOCAL_PATH)/proprietary/com.pv.PVWmdrmClient.jar:system/framework/com.pv.PVWmdrmClient.jar
+
+PRODUCT_COPY_FILES += \
+frameworks/base/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
+frameworks/base/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+frameworks/base/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
+frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+frameworks/base/data/etc/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
+$(LOCAL_PATH)/proprietary/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
+$(LOCAL_PATH)/proprietary/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/proprietary/libRS.so:system/lib/libRS.so \
@@ -163,19 +172,12 @@ $(LOCAL_PATH)/proprietary/sensorserver_yamaha:system/bin/sensorserver_yamaha \
 $(LOCAL_PATH)/proprietary/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha \
 $(LOCAL_PATH)/proprietary/si4709_test:system/bin/si4709_test \
 $(LOCAL_PATH)/proprietary/test_pvauthorengine:system/bin/test_pvauthorengine \
+$(LOCAL_PATH)/proprietary/vold:system/bin/vold \
 $(LOCAL_PATH)/proprietary/wlservice:system/bin/wlservice \
 $(LOCAL_PATH)/proprietary/wm8994:system/bin/wm8994 \
 $(LOCAL_PATH)/proprietary/wpa_cli:system/bin/wpa_cli \
 $(LOCAL_PATH)/proprietary/wpa_supplicant:system/bin/wpa_supplicant \
 $(LOCAL_PATH)/proprietary/gps.conf:system/etc/gps.conf \
-$(LOCAL_PATH)/proprietary/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
-$(LOCAL_PATH)/proprietary/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-$(LOCAL_PATH)/proprietary/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
-$(LOCAL_PATH)/proprietary/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
-$(LOCAL_PATH)/proprietary/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
-$(LOCAL_PATH)/proprietary/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
-$(LOCAL_PATH)/proprietary/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
-$(LOCAL_PATH)/proprietary/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
 $(LOCAL_PATH)/proprietary/options:system/etc/ppp/options \
 $(LOCAL_PATH)/proprietary/vold.conf:system/etc/vold.conf \
 $(LOCAL_PATH)/proprietary/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
@@ -220,7 +222,6 @@ $(LOCAL_PATH)/proprietary/prm_esmx.bin:system/etc/nuance/prm_esmx.bin \
 $(LOCAL_PATH)/proprietary/vst_config_vzw.bin:system/etc/nuance/vst_config_vzw.bin \
 $(LOCAL_PATH)/proprietary/str_esmx.bin:system/etc/nuance/str_esmx.bin \
 $(LOCAL_PATH)/proprietary/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-$(LOCAL_PATH)/proprietary/com.google.android.datamessaging.xml:system/etc/permissions/com.google.android.datamessaging.xml \
 $(LOCAL_PATH)/proprietary/com.google.android.gtalkservice.xml:system/etc/permissions/com.google.android.gtalkservice.xml \
 $(LOCAL_PATH)/proprietary/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
 $(LOCAL_PATH)/proprietary/com.pv.extensions.xml:system/etc/permissions/com.pv.extensions.xml \
