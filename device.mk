@@ -21,16 +21,8 @@ $(call inherit-product, build/target/product/generic.mk)
 $(call inherit-product, vendor/samsung/fascinate/device_fascinate.mk)
 
 PRODUCT_PACKAGES += \
-    DeskClock \
-    DownloadProvider \
-    Gallery3D \
-    GlobalSearch \
     Launcher2 \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
     SoundRecorder \
-    VisualizationWallpers \
     VoiceDialer \
     libRS \
     librs_jni
