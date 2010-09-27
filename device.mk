@@ -21,7 +21,6 @@ $(call inherit-product, build/target/product/generic.mk)
 $(call inherit-product, vendor/samsung/fascinate/device_fascinate.mk)
 
 PRODUCT_PACKAGES += \
-    Launcher2 \
     SoundRecorder \
     VoiceDialer \
     libRS \
