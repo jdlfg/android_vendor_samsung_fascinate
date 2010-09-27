@@ -123,6 +123,17 @@ OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
 PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/proprietary/sechardware.jar:system/framework/sechardware.jar \
+$(LOCAL_PATH)/proprietary/seccamera.jar:system/framework/seccamera.jar \
+$(LOCAL_PATH)/proprietary/com.pv.extensions.jar:system/framework/com.pv.extensions.jar \
+$(LOCAL_PATH)/proprietary/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
+$(LOCAL_PATH)/proprietary/com.google.android.gtalkservice.jar:system/framework/com.google.android.gtalkservice.jar \
+$(LOCAL_PATH)/proprietary/com.google.android.datamessaging.jar:system/framework/com.google.android.datamessaging.jar \
+$(LOCAL_PATH)/proprietary/sec_feature.jar:system/framework/sec_feature.jar \
+$(LOCAL_PATH)/proprietary/com.samsung.device.jar:system/framework/com.samsung.device.jar \
+$(LOCAL_PATH)/proprietary/com.pv.PVWmdrmClient.jar:system/framework/com.pv.PVWmdrmClient.jar
+
+PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/proprietary/libRS.so:system/lib/libRS.so \
 $(LOCAL_PATH)/proprietary/librs_jni.so:system/lib/librs_jni.so \
 $(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
@@ -152,7 +163,6 @@ $(LOCAL_PATH)/proprietary/sensorserver_yamaha:system/bin/sensorserver_yamaha \
 $(LOCAL_PATH)/proprietary/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha \
 $(LOCAL_PATH)/proprietary/si4709_test:system/bin/si4709_test \
 $(LOCAL_PATH)/proprietary/test_pvauthorengine:system/bin/test_pvauthorengine \
-$(LOCAL_PATH)/proprietary/wlp2pservice:system/bin/wlp2pservice \
 $(LOCAL_PATH)/proprietary/wlservice:system/bin/wlservice \
 $(LOCAL_PATH)/proprietary/wm8994:system/bin/wm8994 \
 $(LOCAL_PATH)/proprietary/wpa_cli:system/bin/wpa_cli \
@@ -401,11 +411,6 @@ $(LOCAL_PATH)/proprietary/libvsuite_sharedlib.so:system/lib/libvsuite_sharedlib.
 $(LOCAL_PATH)/proprietary/libvzw-loc-prov.so:system/lib/libvzw-loc-prov.so \
 $(LOCAL_PATH)/proprietary/libwifitest.so:system/lib/libwifitest.so \
 $(LOCAL_PATH)/proprietary/libwldhcp.so:system/lib/libwldhcp.so \
-$(LOCAL_PATH)/proprietary/libwlp2pclient.so:system/lib/libwlp2pclient.so \
-$(LOCAL_PATH)/proprietary/libwlp2penablejni.so:system/lib/libwlp2penablejni.so \
-$(LOCAL_PATH)/proprietary/libwlp2pjni.so:system/lib/libwlp2pjni.so \
-$(LOCAL_PATH)/proprietary/libwlp2pservice.so:system/lib/libwlp2pservice.so \
-$(LOCAL_PATH)/proprietary/libwlp2p.so:system/lib/libwlp2p.so \
 $(LOCAL_PATH)/proprietary/libwlservice.so:system/lib/libwlservice.so \
 $(LOCAL_PATH)/proprietary/libwlwpscli.so:system/lib/libwlwpscli.so \
 $(LOCAL_PATH)/proprietary/libwlwps.so:system/lib/libwlwps.so \

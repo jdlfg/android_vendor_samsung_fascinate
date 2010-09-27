@@ -12,6 +12,16 @@ adb pull /system/lib/libRS.so proprietary
 adb pull /system/lib/librs_jni.so proprietary
 adb pull /system/lib/libpvrANDROID_WSEGL.so proprietary
 
+adb pull /system/framework/sechardware.jar proprietary
+adb pull /system/framework/seccamera.jar proprietary
+adb pull /system/framework/com.pv.extensions.jar proprietary
+adb pull /system/framework/com.google.android.maps.jar proprietary
+adb pull /system/framework/com.google.android.gtalkservice.jar proprietary
+adb pull /system/framework/com.google.android.datamessaging.jar proprietary
+adb pull /system/framework/sec_feature.jar proprietary
+adb pull /system/framework/com.samsung.device.jar proprietary
+adb pull /system/framework/com.pv.PVWmdrmClient.jar proprietary
+
 adb pull /system/bin/pvrsrvinit proprietary
 adb pull /system/bin/BCM4329B1_002.002.023.0417.0464.hcd proprietary
 adb pull /system/bin/bluetoothd proprietary
