@@ -22,6 +22,8 @@ adb pull /system/framework/sec_feature.jar proprietary
 adb pull /system/framework/com.samsung.device.jar proprietary
 adb pull /system/framework/com.pv.PVWmdrmClient.jar proprietary
 
+adb pull /system/bin/rild proprietary
+adb pull /system/bin/softkeysapp proprietary
 adb pull /system/bin/pvrsrvinit proprietary
 adb pull /system/bin/BCM4329B1_002.002.023.0417.0464.hcd proprietary
 adb pull /system/bin/bluetoothd proprietary
