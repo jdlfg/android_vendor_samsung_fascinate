@@ -144,7 +144,6 @@ $(LOCAL_PATH)/proprietary/android.software.live_wallpaper.xml:system/etc/permiss
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/proprietary/rild:system/bin/rild \
-$(LOCAL_PATH)/proprietary/softkeysapp:system/bin/softkeysapp \
 $(LOCAL_PATH)/proprietary/libRS.so:system/lib/libRS.so \
 $(LOCAL_PATH)/proprietary/librs_jni.so:system/lib/librs_jni.so \
 $(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
