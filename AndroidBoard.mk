@@ -191,7 +191,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     $(LOCAL_PATH)/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
     $(LOCAL_PATH)/proprietary/libsrv_um.so:system/lib/libsrv_um.so \
-    $(LOCAL_PATH)/proprietary/libIMGegl.so:system/lib/libIMGegl.so
+    $(LOCAL_PATH)/proprietary/libIMGegl.so:system/lib/libIMGegl.so \
+    $(LOCAL_PATH)/proprietary/libpvr2d.so:system/lib/libpvr2d.so \
+    $(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so
 
 #
 # Sensors, Lights etc
