@@ -123,7 +123,8 @@ OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/fascinate/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/samsung/fascinate/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/samsung/fascinate/cdma-carriers-conf.xml:system/etc/cdma-carriers-conf.xml
 
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
@@ -152,7 +153,6 @@ PRODUCT_COPY_FILES += \
      vendor/samsung/fascinate/prebuilt/keychars/melfas_ts_input.kcm.bin:system/usr/keychars/melfas_ts_input.kcm.bin \
      vendor/samsung/fascinate/prebuilt/keychars/optjoy_device.kcm.bin:system/usr/keychars/optjoy_device.kcm.bin \
      vendor/samsung/fascinate/prebuilt/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin  
-
 
 # vold
 PRODUCT_COPY_FILES += \
@@ -186,6 +186,7 @@ PRODUCT_COPY_FILES += \
 # Display (3D)
 #
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
     $(LOCAL_PATH)/proprietary/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
     $(LOCAL_PATH)/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \
     $(LOCAL_PATH)/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
@@ -271,6 +272,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libwm8994.so:system/lib/libwm8994.so \
     $(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
     $(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
-    $(LOCAL_PATH)/proprietary/libaudiopolicy.so:system/lib/libaudiopolicy.so \
     $(LOCAL_PATH)/proprietary/libvolcustomjni.so:system/lib/libvolcustomjni.so
 
