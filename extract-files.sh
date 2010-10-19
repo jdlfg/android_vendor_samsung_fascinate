@@ -8,6 +8,7 @@ adb pull /system/lib/libaudio.so proprietary
 adb pull /system/lib/libaudiopolicy.so proprietary
 adb pull /system/lib/libcamera.so proprietary
 adb pull /system/lib/libril.so proprietary
+adb pull /system/lib/libreference-ril.so proprietary
 adb pull /system/lib/libRS.so proprietary
 adb pull /system/lib/librs_jni.so proprietary
 adb pull /system/lib/libpvrANDROID_WSEGL.so proprietary
@@ -43,8 +44,10 @@ adb pull /system/bin/playlogo proprietary
 adb pull /system/bin/playlogos1 proprietary
 adb pull /system/bin/playlpm proprietary
 adb pull /system/bin/pppd_runner proprietary
+adb pull /system/bin/pppd proprietary
 adb pull /system/bin/pv2way_omx_engine_test proprietary
 adb pull /system/bin/pvplayer_engine_test proprietary
+adb pull /system/bin/rild proprietary
 adb pull /system/bin/rilclient-test proprietary
 adb pull /system/bin/sensorcalibutil_yamaha proprietary
 adb pull /system/bin/sensorserver_yamaha proprietary
@@ -71,6 +74,7 @@ adb pull /system/etc/permissions/android.hardware.touchscreen.multitouch.distinc
 adb pull /system/etc/permissions/android.hardware.touchscreen.multitouch.xml proprietary
 adb pull /system/etc/permissions/android.software.live_wallpaper.xml proprietary
 adb pull /system/etc/ppp/options proprietary
+adb pull /system/etc/ppp/ip-up-vpn proprietary
 adb pull /system/etc/vold.conf proprietary
 adb pull /system/etc/wifi/bcm4329_aps.bin proprietary
 adb pull /system/etc/wifi/bcm4329_mfg.bin proprietary
@@ -343,6 +347,7 @@ adb pull /system/lib/SCH-I500/libSwypeCore.so proprietary
 adb pull /system/lib/egl/libEGL_POWERVR_SGX540_120.so proprietary
 adb pull /system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so proprietary
 adb pull /system/lib/egl/libGLESv2_POWERVR_SGX540_120.so proprietary
+adb pull /system/lib/egl/libGLES_android.so proprietary
 adb pull /system/lib/hw/copybit.s5pc110.so proprietary
 adb pull /system/lib/hw/gralloc.s5pc110.so proprietary
 adb pull /system/lib/hw/lights.default.so proprietary

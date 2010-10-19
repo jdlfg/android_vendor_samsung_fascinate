@@ -28,8 +28,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Wifi related defines
 WIFI_FIRMWARE_LOADER := "wlan_loader"
-BOARD_WPA_SUPPLICANT_DRIVER := WEXT
-WPA_SUPPLICANT_VERSION := VER_0_6_X
+#BOARD_WPA_SUPPLICANT_DRIVER := WEXT
+#WPA_SUPPLICANT_VERSION := VER_0_6_X
 BOARD_WLAN_DEVICE := dhd
 WIFI_DRIVER_MODULE_PATH := "/lib/modules/dhd.ko"
 WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/wifi/bcm4329_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt dhd_watchdog_ms=10 dhd_poll=1"
@@ -74,6 +74,6 @@ BOARD_CACHE_FILESYSTEM_OPTIONS := llw,check=no,nosuid,nodev
 # Only internal storage (mmcblk0) is available.
 #BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1
 #BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1p1
-BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
+#BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
 BOARD_EGL_CFG := vendor/samsung/fascinate/egl.cfg
 
