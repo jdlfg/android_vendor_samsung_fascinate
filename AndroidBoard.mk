@@ -269,4 +269,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
     $(LOCAL_PATH)/proprietary/libaudio.so:system/lib/libaudio.so \
     $(LOCAL_PATH)/proprietary/libwm8994.so:system/lib/libwm8994.so \
-    $(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so
+    $(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
+    $(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
+    $(LOCAL_PATH)/proprietary/libaudiopolicy.so:system/lib/libaudiopolicy.so \
+    $(LOCAL_PATH)/proprietary/libvolcustomjni.so:system/lib/libvolcustomjni.so
+
