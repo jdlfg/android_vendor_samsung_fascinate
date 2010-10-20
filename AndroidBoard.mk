@@ -206,6 +206,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \
     $(LOCAL_PATH)/proprietary/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
     $(LOCAL_PATH)/proprietary/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \
+    $(LOCAL_PATH)/proprietary/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \
     $(LOCAL_PATH)/proprietary/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \
     $(LOCAL_PATH)/proprietary/sensorserver_yamaha:system/bin/sensorserver_yamaha \
     $(LOCAL_PATH)/proprietary/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha
