@@ -276,7 +276,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libomx_qcelpdec_sharedlibrary.so:system/lib/libomx_qcelpdec_sharedlibrary.so \
     $(LOCAL_PATH)/proprietary/libomx_qcelpenc_sharedlibrary.so:system/lib/libomx_qcelpenc_sharedlibrary.so \
     $(LOCAL_PATH)/proprietary/libsoloomx_sharedlibrary.so:system/lib/libsoloomx_sharedlibrary.so \
-    $(LOCAL_PATH)/proprietary/libsoloomx_wrapper_sharedlibrary.so:system/lib/libsoloomx_wrapper_sharedlibrary.so
+    $(LOCAL_PATH)/proprietary/libsoloomx_wrapper_sharedlibrary.so:system/lib/libsoloomx_wrapper_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/pvOMXcfg.ini:system/etc/pvOMXcfg.ini \
+    $(LOCAL_PATH)/proprietary/pv2way_omx_engine_test:system/bin/pv2way_omx_engine_test
 
 #
 # Audio
@@ -288,7 +290,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
     $(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
     $(LOCAL_PATH)/proprietary/libvolcustomjni.so:system/lib/libvolcustomjni.so \
-    $(LOCAL_PATH)/prebuilt/asound.conf:system/etc/asound.conf
+    $(LOCAL_PATH)/prebuilt/asound.conf:system/etc/asound.conf \
+    $(LOCAL_PATH)/proprietary/wm8994:system/bin/wm8994
 
 #
 # Voice Search (?)
