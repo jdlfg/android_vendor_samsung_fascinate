@@ -34,37 +34,37 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/sh | $(ACP)
 	$(transform-prebuilt-to-target)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libaudio.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := libaudio.so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+#OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libwm8994.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := libwm8994.so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+#OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libsamsunglmeq.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := libsamsunglmeq.so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+#OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := liba2dp.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := liba2dp.so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+#OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsecril-client.so
@@ -74,29 +74,29 @@ LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libs3cjpeg.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := libs3cjpeg.so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+#OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiopolicy.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := libaudiopolicy.so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+#OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libvolcustomjni.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := libvolcustomjni.so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+#OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libcamera.so
@@ -232,8 +232,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libreference-ril.so:system/lib/libreference-ril.so \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/drexe:system/bin/drexe \
-    $(LOCAL_PATH)/proprietary/rilclient-test:system/bin/rilclient-test \
-    $(LOCAL_PATH)/proprietary/rild:system/bin/rild
+    $(LOCAL_PATH)/proprietary/rilclient-test:system/bin/rilclient-test
+#    $(LOCAL_PATH)/proprietary/rild:system/bin/rild
 
 #
 # GPS
@@ -284,14 +284,15 @@ PRODUCT_COPY_FILES += \
 # Audio
 #
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
-    $(LOCAL_PATH)/proprietary/libaudio.so:system/lib/libaudio.so \
-    $(LOCAL_PATH)/proprietary/libwm8994.so:system/lib/libwm8994.so \
-    $(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
-    $(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
-    $(LOCAL_PATH)/proprietary/libvolcustomjni.so:system/lib/libvolcustomjni.so \
     $(LOCAL_PATH)/prebuilt/asound.conf:system/etc/asound.conf \
-    $(LOCAL_PATH)/proprietary/wm8994:system/bin/wm8994
+    $(LOCAL_PATH)/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so
+#    $(LOCAL_PATH)/proprietary/libaudio.so:system/lib/libaudio.so \
+#    $(LOCAL_PATH)/proprietary/libwm8994.so:system/lib/libwm8994.so \
+#    $(LOCAL_PATH)/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
+#    $(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
+#    $(LOCAL_PATH)/proprietary/libvolcustomjni.so:system/lib/libvolcustomjni.so \
+#    $(LOCAL_PATH)/prebuilt/asound.conf:system/etc/asound.conf \
+#    $(LOCAL_PATH)/proprietary/wm8994:system/bin/wm8994
 
 #
 # Voice Search (?)
