@@ -176,15 +176,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vold.conf:system/etc/vold.conf
 
 # ppp
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/pppd:system/bin/pppd \
-    $(LOCAL_PATH)/proprietary/pppd_runner:system/bin/pppd_runner \
-    $(LOCAL_PATH)/proprietary/chap-secrets:system/etc/ppp/chap-secrets \
-    $(LOCAL_PATH)/proprietary/ip-down:system/etc/ppp/ip-down \
-    $(LOCAL_PATH)/proprietary/ip-up:system/etc/ppp/ip-up \
-    $(LOCAL_PATH)/proprietary/ip-up-vpn:system/etc/ppp/ip-up-vpn \
-    $(LOCAL_PATH)/proprietary/options:system/etc/ppp/options \
-    $(LOCAL_PATH)/proprietary/pap-secrets:system/etc/ppp/pap-secrets
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/proprietary/pppd:system/bin/pppd \
+#    $(LOCAL_PATH)/proprietary/pppd_runner:system/bin/pppd_runner \
+#    $(LOCAL_PATH)/proprietary/chap-secrets:system/etc/ppp/chap-secrets \
+#    $(LOCAL_PATH)/proprietary/ip-down:system/etc/ppp/ip-down \
+#    $(LOCAL_PATH)/proprietary/ip-up:system/etc/ppp/ip-up \
+#    $(LOCAL_PATH)/proprietary/ip-up-vpn:system/etc/ppp/ip-up-vpn \
+#    $(LOCAL_PATH)/proprietary/options:system/etc/ppp/options \
+#    $(LOCAL_PATH)/proprietary/pap-secrets:system/etc/ppp/pap-secrets
 
 #
 # Wifi
