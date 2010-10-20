@@ -196,7 +196,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libIMGegl.so:system/lib/libIMGegl.so \
     $(LOCAL_PATH)/proprietary/libpvr2d.so:system/lib/libpvr2d.so \
     $(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
-    $(LOCAL_PATH)/proprietary/libglslcompiler.so:system:/lib/libglslcompiler.so
+    $(LOCAL_PATH)/proprietary/libglslcompiler.so:system/lib/libglslcompiler.so
 
 #
 # Sensors, Lights etc
