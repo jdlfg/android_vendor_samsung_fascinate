@@ -239,7 +239,10 @@ PRODUCT_COPY_FILES += \
 #
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libgps.so:system/lib/libgps.so \
-    $(LOCAL_PATH)/proprietary/libsecgps.so:system/lib/libsecgps.so
+    $(LOCAL_PATH)/proprietary/libsecgps.so:system/lib/libsecgps.so \
+    $(LOCAL_PATH)/proprietary/glgps_samsungJupiter:system/bin/gpsd/glgps_samsungJupiter \
+    $(LOCAL_PATH)/proprietary/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/proprietary/jupiter.xml:system/etc/jupiter.xml
 
 #
 # OMX
