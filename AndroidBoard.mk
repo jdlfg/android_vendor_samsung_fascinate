@@ -195,7 +195,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libsrv_init.so:system/lib/libsrv_init.so \
     $(LOCAL_PATH)/proprietary/libIMGegl.so:system/lib/libIMGegl.so \
     $(LOCAL_PATH)/proprietary/libpvr2d.so:system/lib/libpvr2d.so \
-    $(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so
+    $(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
+    $(LOCAL_PATH)/proprietary/libglslcompiler.so:system:/lib/libglslcompiler.so
 
 #
 # Sensors, Lights etc
@@ -266,7 +267,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
     $(LOCAL_PATH)/proprietary/libswmadomxoc.so:system/lib/libswmadomxoc.so \
     $(LOCAL_PATH)/proprietary/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
-    $(LOCAL_PATH)/proprietary/libswmv8domxoc.so:system/lib/libswmv8domxoc.so
+    $(LOCAL_PATH)/proprietary/libswmv8domxoc.so:system/lib/libswmv8domxoc.so \
+    $(LOCAL_PATH)/proprietary/libSecOMXCore.so:system/lib/libSecOMXCore.so \
+    $(LOCAL_PATH)/proprietary/libsoloomx_wmadec_sharedlibrary.so:system/lib/libsoloomx_wmadec_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/libsoloomx_wmvdec_sharedlibrary.so:system/lib/libsoloomx_wmvdec_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/libomx_evrcdec_sharedlibrary.so:system/lib/libomx_evrcdec_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/libomx_evrcenc_sharedlibrary.so:system/lib/libomx_evrcenc_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/libomx_qcelpdec_sharedlibrary.so:system/lib/libomx_qcelpdec_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/libomx_qcelpenc_sharedlibrary.so:system/lib/libomx_qcelpenc_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/libsoloomx_sharedlibrary.so:system/lib/libsoloomx_sharedlibrary.so \
+    $(LOCAL_PATH)/proprietary/libsoloomx_wrapper_sharedlibrary.so:system/lib/libsoloomx_wrapper_sharedlibrary.so
 
 #
 # Audio
@@ -279,4 +289,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/liba2dp.so:system/lib/liba2dp.so \
     $(LOCAL_PATH)/proprietary/libvolcustomjni.so:system/lib/libvolcustomjni.so \
     $(LOCAL_PATH)/prebuilt/asound.conf:system/etc/asound.conf
+
+#
+# Voice Search (?)
+#
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/libgtalk_jni.so:system/lib/libgtalk_jni.so \
+    $(LOCAL_PATH)/proprietary/libspeech.so:system/lib/libspeech.so
 
